@@ -10,7 +10,7 @@ import os
 from email_alert import send_email_alert
 
 # Set API URL
-API_URL = "https://scam-job-detector-production.up.railway.app/predict" # Make sure FastAPI is running on this port
+API_URL = "https://scam-job-detector-1.onrender.com/predict" # Make sure FastAPI is running on this port
 
 # Page settings
 st.set_page_config(page_title="Fake Job Posting Detector", layout="wide")
