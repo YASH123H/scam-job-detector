@@ -7,7 +7,7 @@ import gdown
 from email_alert import send_email_alert
 
 # ✅ Backend batch prediction URL
-API_URL = "https://scam-job-detector-backend.onrender.com/"
+API_URL = "https://scam-job-detector-backend.onrender.com/predict_batch"
 
 st.set_page_config(page_title="Fake Job Posting Detector", layout="wide")
 st.image("banner.jpg", use_container_width=True)
