@@ -13,7 +13,6 @@ uvicorn
 
 # Email
 python-dotenv  # for managing environment variables
-smtplib  # comes with Python, but listed here for awareness
 email-validator  # optional but good to validate email format
 
 # Google Drive CSV download
