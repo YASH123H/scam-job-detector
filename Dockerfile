@@ -1,5 +1,6 @@
 # Use official Python base image
-FROM python:3.10
+FROM python:3.10-slim
+
 
 # Set working directory in container
 WORKDIR /app
@@ -11,5 +12,8 @@ COPY . .
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-# Run your Python app
-CMD ["python", "app.py"]
+# Expose port 8000 (Railway default or typical for Streamlit)
+EXPOSE 8000
+
+# Start Streamlit app with appropriate network settings
+CMD ["streamlit", "run", "app.py", "--server.port=8000", "--server.address=0.0.0.0"]
