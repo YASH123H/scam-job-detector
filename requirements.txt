@@ -1,10 +1,28 @@
-#`requirements.txt`
-streamlit==1.34.0
-pandas==2.2.2
-numpy==1.26.4
-matplotlib==3.8.4
-seaborn==0.13.2
-scikit-learn==1.4.2
-joblib==1.4.2
+# Core ML dependencies
+scikit-learn
+joblib
+pandas
+numpy
+
+# Frontend (Streamlit)
+streamlit
+
+# Backend API (FastAPI)
+fastapi
+uvicorn
+
+# Email
+python-dotenv  # for managing environment variables
+smtplib  # comes with Python, but listed here for awareness
+email-validator  # optional but good to validate email format
+
+# Google Drive CSV download
 gdown
+
+# Visualization
+matplotlib
+seaborn
+
+# HTTP request from Streamlit to FastAPI
+requests
 
